@@ -60,9 +60,7 @@ const Products = () => {
             <button className="design-button">Dizayn et</button>
           </div>
         </div>
-        <div className="product-card"/>
-          <img src={white_tshirt} alt="" />
-          <img src={black_tshirt} alt="" className="hover-img" />
+        <div className="product-card">
           <img src={black_tshirt} alt=""  className="hover-img"/>
           <img src={white_tshirt} alt="" />
           <hr />
@@ -117,8 +115,6 @@ const Products = () => {
           </div>
         </div>
         <div className="product-card">
-          <img src={white_sweater} alt="" />
-          <img src={sweater} alt="" className="hover-img" />
           <img src={sweater} alt="" className="hover-img"/>
           <img src={white_sweater} alt=""  />
           <hr />
