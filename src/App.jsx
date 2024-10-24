@@ -7,18 +7,19 @@ import { Route, Routes } from 'react-router'
 import About from './Components/About/About'
 import Contact from './Components/ContactPage/Contact'
 import Footer from './Components/Footer/Footer'
-
+import HomePage from "./Components/HomePage/HomePage";
 const App = () => {
   return (
     <div>
-        <Nav/>
-        <Routes>
-          <Route path='/products' element={<Products/>} />
-          <Route path='/productdetail' element={<ProductDetail/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-        </Routes>
-        <Footer/>
+      <Nav />
+      <Routes>
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/productdetail' element={<ProductDetail />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }
