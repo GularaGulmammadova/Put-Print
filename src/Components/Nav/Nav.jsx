@@ -26,7 +26,7 @@ const Nav = () => {
     return (
         <header className="header" ref={navbar}>
             <div className="logo">
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="" /></Link>
             </div>
             <nav className="nav">
                 <Link to="/" className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>Ana səhifə</Link>
