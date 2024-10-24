@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import "./homePage.css";
+import "./HomePage.css";
 // import white_tshirt from "./../../site assets/t-shirt oversize/white/ui kart/tshirta.png";
 // import black_tshirt from "./../../site assets/t-shirt oversize/black/ui kart/tshirt.png";
 // import w_tshirt from "./../../site assets/t-shirt/white/ui kart/W_UI.png";
