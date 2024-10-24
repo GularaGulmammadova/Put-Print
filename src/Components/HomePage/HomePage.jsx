@@ -17,6 +17,12 @@ import homepageclothing from "../../../img/homepageclothing.png";
 import homepagelogo from "../../../img/homepagelogo.png";
 
 const HomePage = () => {
+
+    const Show = () => {
+        const editorModal = document.getElementById('editorModal');
+        editorModal.style.display = 'block';
+      }
+
   return (
     <div className="container">
       <div className="home-row">
@@ -25,7 +31,7 @@ const HomePage = () => {
             Sizin üçün <br /> keyfiyyətli dizaynlar
           </p>
           <p>İstədiyiniz dizaynlarla öz üslubunuzu yaradın.</p>
-          <button className="home-page-btn">Dizayna Başla</button>
+          <button onClick={() => Show()} className="home-page-btn">Dizayna Başla</button>
         </div>
         <div className="home-row-images">
           <img src={homepageclothing} alt="" />
