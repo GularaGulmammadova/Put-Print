@@ -20,6 +20,7 @@ body {
   width: 50%;
   justify-content: flex-end;
   display: flex;
+  color: #f5552a;
 }
 .heading .clickLogo {
   width: 40vw;
@@ -40,15 +41,18 @@ body {
 
 /* EDITOR BUTTONS */
 #editorButtons {
-  background-color: #474747 !important;
+  /* background-color: #474747 !important; */
   display: flex;
   max-width: 90%;
   margin: 10% auto auto auto;
   font-size: 2em;
 }
 #editorButtons .btn-primary {
-  background-color: #474747 !important;
-  border: 1px solid #474747;
+  background-color: #f5552a !important;
+  /* border: 1px solid #f5552a; */
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
   font-size: 1em;
 }
 
@@ -141,11 +145,11 @@ input[type=file] {
   border: 1px solid #474747;
   color: #ffffff;
 }
-#foter #tshirt-add-to-cart {
+/* #foter #tshirt-add-to-cart {
   background-color: #f15922;
   border: 1px solid #f15922;
   color: #ffffff;
-}
+} */
 
 /* COLOR PICKERS */
 .list-group {

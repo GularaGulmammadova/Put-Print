@@ -603,6 +603,6 @@ function clearCanvas() {
   layer.destroy();
 }
 
-// $("#tshirt-add-to-cart").on("click", function () {
-//   let dataURL = stage.toDataURL();
-// });
+$("#tshirt-add-to-cart").on("click", function () {
+  let dataURL = stage.toDataURL();
+});
