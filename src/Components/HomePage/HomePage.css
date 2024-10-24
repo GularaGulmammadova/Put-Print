@@ -17,7 +17,6 @@
   font-weight: 400;
   line-height: 78.02px;
   text-align: left;
-
 }
 
 .home-page-part2 {
@@ -26,7 +25,6 @@
 }
 
 .home-page-part2 p:first-child {
-
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 500;
@@ -56,7 +54,6 @@
   font-weight: 300;
   line-height: 29.26px;
   text-align: left;
-
 }
 
 a {
@@ -130,17 +127,15 @@ hr {
   padding-inline: 30px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Ensure the grid layout */
-  gap: 40px; /* Gap between the cards */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin: 0 auto; /* Center the whole grid horizontally */
-
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .home-product-card {
   background-color: white;
-  /* padding: 15px; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -177,7 +172,6 @@ hr {
   font-size: 16px;
 }
 
-
 .home-product-card .home-size span {
   font-weight: 400;
   font-size: 16px;
@@ -198,14 +192,11 @@ hr {
 }
 
 .home-product-card .home-detail {
-  /* margin-bottom: 16px; */
   display: flex;
   flex-direction: row;
   gap: 8px;
   padding: 15px;
   align-items: center;
-  /* width: 300px;
-    height: 143px; */
 }
 
 .home-product-card {
@@ -226,7 +217,6 @@ hr {
   opacity: 1;
   z-index: 1;
 }
-
 
 .home-product-card .home-detail img {
   width: 20px;
@@ -257,31 +247,13 @@ hr {
 }
 
 .home-product-card .home-product-name {
- display: flex;
+  display: flex;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.94px;
   padding-inline: 22px;
 }
-
-
-/* .color {
-      display: inline-block;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      margin-right: 5px;
-    }
-     */
-/* .product-details {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
-      font-size: 14px;
-    } */
-
 
 .home-product-card .home-design-button {
   display: flex;
@@ -297,11 +269,13 @@ hr {
   font-weight: 500;
   cursor: pointer;
 }
-.home-page-logos{
+
+.home-page-logos {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 234px;
 }
+
 .home-page-part3 p:first-child {
   font-family: Montserrat;
   font-size: 32px;
@@ -309,8 +283,8 @@ hr {
   line-height: 39.01px;
   text-align: center;
   margin-bottom: 98px;
-
 }
+
 .home-page-part3 img:not(:last-child) {
   margin-right: 140px;
 }
