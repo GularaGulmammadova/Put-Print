@@ -5,6 +5,7 @@ import choose_icon from "./../../site assets/logo and icons/choose.png";
 import design_icon from "./../../site assets/logo and icons/design.png";
 import order_icon from "./../../site assets/logo and icons/order.png";
 import ai_image from "./../../site assets/logo and icons/ai-image.png";
+import design_img from "./../../site assets/design-image.png"
 
 const About = () => {
   
@@ -29,7 +30,7 @@ const About = () => {
         </div>
         <div className="about-image">
           <img
-            src="https://s3-alpha-sig.figma.com/img/3307/8081/541fad29313594308485dab9c542cf03?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cgvSp7Tg-dRc1ShFJ1NoCYWT0h0qtv-guTUTmvPEgksYtHheFBEABz12OfL5kTsddy3-1jan9auQcCEvPU9Ld~jzGSXj9g5fm9TSfI1X-zozgLQwoIGKKJIGO4slc2t3Dejx2wu2~oCqsAbuItz2Icta-PaUlfKgECfbcoPnUkbFQ8t0pd1nSmQyZYTDCipGHDgm-zCEgezKbcf~4Z5b~CzD3gAdWrUjbf5tWj4yBOnycTYnl~m9shrm-lbrzzz25a5ULjma1YUneyBBqKEcEzTQDUNEWgUkUmtdy0qLwTVLFUgj7NvIZv13atJdsTmz0OSEBoaB7CApzQTKA0VDuA__"
+          src={design_img}
             alt="about-image"
           />
         </div>
