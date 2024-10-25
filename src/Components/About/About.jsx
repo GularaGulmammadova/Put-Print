@@ -7,6 +7,12 @@ import order_icon from "./../../site assets/logo and icons/order.png";
 import ai_image from "./../../site assets/logo and icons/ai-image.png";
 
 const About = () => {
+  
+  const Show = () => {
+    const editorModal = document.getElementById('editorModal');
+    editorModal.style.display = 'block';
+  }
+
   return (
     <div className="container">
       <div className="about-content">
@@ -18,7 +24,7 @@ const About = () => {
             Bir neçə dəqiqə ərzində gözəl, xüsusi məhsullar yaradın və satın.
           </p>
           <button className="design-btn">
-            <p className="starting-design">Dizayna başla</p>
+            <p  onClick={() => Show()} className="starting-design">Dizayna başla</p>
           </button>
         </div>
         <div className="about-image">
