@@ -1,53 +1,60 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./HomePage.css";
-// import white_tshirt from "./../../site assets/t-shirt oversize/white/ui kart/tshirta.png";
-// import black_tshirt from "./../../site assets/t-shirt oversize/black/ui kart/tshirt.png";
-// import w_tshirt from "./../../site assets/t-shirt/white/ui kart/W_UI.png";
-// import b_tshirt from "./../../site assets/t-shirt/black/ui kart/B_UI.png";
-// import hoodie from "./../../site assets/hoody/white/ui kart/hoodie_w.png";
-// import black_hoodie from "./../../site assets/hoody/black/ui kart/hoodie_B.png";
-import sweater from "./../../site assets/sweater/black/ui kart/sweater_b_ui.png";
-import white_sweater from "./../../site assets/sweater/white/ui kart/sweater_w_ui.png";
-// import cap from "./../../site assets/cap/cap.png";
-// import bag from "./../../site assets/eco bag/ui cardd/eco-bag.png";
+import black_hoodie1 from "../newproducts/hoodieblack1.png";
+import white_hoodie1 from "../newproducts/hoodiewhite1.png";
+import black_hoodie2 from "../newproducts/hoodieblack2.png";
+import white_hoodie2 from "../newproducts/hoodiewhite2.png";
+import black_hoodie3 from "../newproducts/hoodieblack3.png";
+import white_hoodie3 from "../newproducts/hoodiewhite3.png";
+import black_hoodie4 from "../newproducts/hoodieblack4.png";
+import white_hoodie4 from "../newproducts/hoodiewhite4.png";
+import black_hoodie5 from "../newproducts/hoodieblack5.png";
+import white_hoodie5 from "../newproducts/hoodiewhite5.png";
+import black_hoodie6 from "../newproducts/hoodieblack6.png";
+import white_hoodie6 from "../newproducts/hoodiewhite6.png";
+import black_hoodie7 from "../newproducts/hoodieblack7.png";
+import white_hoodie7 from "../newproducts/hoodiewhite7.png";
+import black_hoodie8 from "../newproducts/hoodieblack8.png";
+import white_hoodie8 from "../newproducts/hoodiewhite8.png";
 import size from "./../../site assets/logo and icons/size.png";
 import { Link } from "react-router-dom";
 import homepageclothing from "../../../img/homepageclothing.png";
 import homepagelogo from "../../../img/homepagelogo.png";
 
 const HomePage = () => {
+  const Show = () => {
+    const editorModal = document.getElementById("editorModal");
+    editorModal.style.display = "block";
+  };
 
-    const Show = () => {
-        const editorModal = document.getElementById('editorModal');
-        editorModal.style.display = 'block';
-      }
 
   return (
     <div className="container">
       <div className="home-row">
         <div className="home-row-text">
           <p>
-            Sizin üçün <br /> keyfiyyətli dizaynlar
+          Öz  tərzini <br/> yarat
           </p>
-          <p>İstədiyiniz dizaynlarla öz üslubunuzu yaradın.</p>
+          <p>Etdiyin dizaynlarla fərqini göstər!
+          </p>
           <button onClick={() => Show()} className="home-page-btn">Dizayna Başla</button>
         </div>
         <div className="home-row-images">
           <img src={homepageclothing} alt="" />
         </div>
       </div>
-      <div className="home-page-part2">
-        <p>Hazır məhsullarımız</p>
+      <div className="home-page-part2" >
+        <p>AtlazWear – dan kolleksiyalar</p>
         <div className="home-product-cards">
           <Link to="/">
             <div className="home-product-card">
               <div className="image">
-              <img src={sweater} alt="" className="hover-img" />
-              <img src={white_sweater} alt="" />
+              <img src={black_hoodie1} alt="" className="hover-img" />
+              <img src={white_hoodie1} alt="" />
               </div>
               <hr />
-              <div className="home-product-name">Sviter</div>
+              <div className="home-product-name">Kapşonlu Sviter</div>
               <div className="home-detail">
                 <div className="home-colors">
                   <div
@@ -68,7 +75,7 @@ const HomePage = () => {
               </div>
               <div className="home-desc">
                 <div className="home-price">
-                  <span>35₼</span>
+                  <span>48₼</span>
                   <button className="home-design-button">Sifariş et</button>
                 </div>
               </div>
@@ -77,11 +84,11 @@ const HomePage = () => {
           <Link to="/">
             <div className="home-product-card">
               <div className="image">
-              <img src={sweater} alt="" className="hover-img" />
-              <img src={white_sweater} alt="" />
+              <img src={black_hoodie2} alt="" className="hover-img" />
+              <img src={white_hoodie2} alt="" />
               </div>
               <hr />
-              <div className="home-product-name">Sviter</div>
+              <div className="home-product-name">Kapşonlu Sviter</div>
               <div className="home-detail">
                 <div className="home-colors">
                   <div
@@ -99,7 +106,7 @@ const HomePage = () => {
               </div>
               <div className="home-desc">
                 <div className="home-price">
-                  <span>35₼</span>
+                  <span>48₼</span>
                   <button className="home-design-button">Sifariş et</button>
                 </div>
               </div>
@@ -109,11 +116,11 @@ const HomePage = () => {
             {" "}
             <div className="home-product-card">
               <div className="image">
-              <img src={sweater} alt="" className="hover-img" />
-              <img src={white_sweater} alt="" />
+              <img src={black_hoodie3} alt="" className="hover-img" />
+              <img src={white_hoodie3} alt="" />
               </div>
               <hr />
-              <div className="home-product-name">Sviter</div>
+              <div className="home-product-name">Kapşonlu Sviter</div>
               <div className="home-detail">
                 <div className="home-colors">
                   <div
@@ -132,7 +139,7 @@ const HomePage = () => {
               </div>
               <div className="home-desc">
                 <div className="home-price">
-                  <span>35₼</span>
+                  <span>48₼</span>
                   <button className="home-design-button">Sifariş et</button>
                 </div>
               </div>
@@ -141,11 +148,11 @@ const HomePage = () => {
           <Link to="/">
             <div className="home-product-card">
               <div className="image">
-                <img src={sweater} alt="" className="hover-img" />
-                <img src={white_sweater} alt="" />
+                <img src={black_hoodie4} alt="" className="hover-img" />
+                <img src={white_hoodie4} alt="" />
               </div>
               <hr />
-              <div className="home-product-name">Sviter</div>
+              <div className="home-product-name">Kapşonlu Sviter</div>
               <div className="home-detail">
                 <div className="home-colors">
                   <div
@@ -163,7 +170,7 @@ const HomePage = () => {
               </div>
               <div className="home-desc">
                 <div className="home-price">
-                  <span>35₼</span>
+                  <span>48₼</span>
                   <button className="home-design-button">Sifariş et</button>
                 </div>
               </div>
@@ -171,11 +178,11 @@ const HomePage = () => {
           </Link>
           <div className="home-product-card">
             <div className="image">
-            <img src={sweater} alt="" className="hover-img" />
-            <img src={white_sweater} alt="" />
+            <img src={black_hoodie5} alt="" className="hover-img" />
+            <img src={white_hoodie5} alt="" />
             </div>
             <hr />
-            <div className="home-product-name">Sviter</div>
+            <div className="home-product-name">Kapşonlu Sviter</div>
             <div className="home-detail">
               <div className="home-colors">
                 <div
@@ -194,23 +201,23 @@ const HomePage = () => {
             </div>
             <div className="home-desc">
               <div className="home-price">
-                <span>35₼</span>
+                <span>48₼</span>
                 <button className="home-design-button">Sifariş et</button>
               </div>
             </div>
           </div>
           <div className="home-product-card">
             <div className="image">
-            <img src={sweater} alt="" className="hover-img" />
-            <img src={white_sweater} alt="" />
+            <img src={black_hoodie6} alt="" className="hover-img" />
+            <img src={white_hoodie6} alt="" />
             </div>
             <hr />
             <div className="home-product-name" style={{ marginBottom: "50px" }}>
-              Sviter
+            Kapşonlu Sviter
             </div>
             <div className="home-desc">
               <div className="home-price">
-                <span>35₼</span>
+                <span>48₼</span>
                 <button className="home-design-button">Sifariş et</button>
               </div>
             </div>
@@ -218,11 +225,11 @@ const HomePage = () => {
           <Link to="/">
             <div className="home-product-card">
               <div className="image">
-                <img src={sweater} alt="" className="hover-img" />
-                <img src={white_sweater} alt="" />
+                <img src={black_hoodie7} alt="" className="hover-img" />
+                <img src={white_hoodie7} alt="" />
               </div>
               <hr />
-              <div className="home-product-name">Sviter</div>
+              <div className="home-product-name">Kapüşonlu Sviter</div>
               <div className="home-detail">
                 <div className="home-colors">
                   <div
@@ -240,7 +247,7 @@ const HomePage = () => {
               </div>
               <div className="home-desc">
                 <div className="home-price">
-                  <span>35₼</span>
+                  <span>48₼</span>
                   <button className="home-design-button">Sifariş et</button>
                 </div>
               </div>
@@ -249,11 +256,11 @@ const HomePage = () => {
           <Link to="/">
             <div className="home-product-card">
               <div className="image">
-              <img src={sweater} alt="" className="hover-img" />
-              <img src={white_sweater} alt="" />
+              <img src={black_hoodie8} alt="" className="hover-img" />
+              <img src={white_hoodie8} alt="" />
               </div>
               <hr />
-              <div className="home-product-name">Sviter</div>
+              <div className="home-product-name">Kapşonlu Sviter</div>
               <div className="home-detail">
                 <div className="home-colors">
                   <div
@@ -271,7 +278,7 @@ const HomePage = () => {
               </div>
               <div className="home-desc">
                 <div className="home-price">
-                  <span>35₼</span>
+                  <span>48₼</span>
                   <button className="home-design-button">Sifariş et</button>
                 </div>
               </div>
@@ -290,6 +297,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

@@ -9,7 +9,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Nav = () => {
     const menu = useRef();
     const navbar = useRef();
-    const location = useLocation(); // Get the current location
+    const location = useLocation();
 
     const menuHandler = () => {
         menu.current.classList.toggle('showNav');
@@ -32,16 +32,16 @@ const Nav = () => {
                 <Link to="/" className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>Ana səhifə</Link>
                 <Link to="/products" className={`nav-item ${location.pathname === '/products' ? 'active' : ''}`}>Məhsullar</Link>
                 <Link to="/about" className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>Haqqımızda</Link>
-                <Link to="/Contact" className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>Əlaqə</Link>
+                <Link to="/contact" className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>Əlaqə</Link>
             </nav>
             <div className="header-right">
                 <div className="language-selector">
                     Az <span className="arrow"><IoIosArrowDown/></span>
                 </div>
-                <div className="corporate-order">        
+                <Link to="/korporativ" className="corporate-order"> {/* Здесь добавлен Link */}
                     <span className="user-icon"><FaRegUserCircle/></span>
                     Korporativ sifariş
-                </div>
+                </Link>
             </div>
         </header>
     );

@@ -8,12 +8,15 @@ import About from './Components/About/About'
 import Contact from './Components/ContactPage/Contact'
 import Footer from './Components/Footer/Footer'
 import HomePage from "./Components/HomePage/HomePage";
+import Korporativ from "./Components/Korporativ/Korporativ";
 const App = () => {
   return (
     <div>
       <Nav />
       <Routes>
-        <Route path='/' element={<HomePage/>} />
+
+        <Route path='/' element={<HomePage />} />
+        <Route path='/korporativ' element={<Korporativ/>}/>
         <Route path='/products' element={<Products />} />
         <Route path='/productdetail' element={<ProductDetail />} />
         <Route path='/about' element={<About />} />

@@ -1,19 +1,35 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import "./ProductDetail.css"; 
+import "./ProductDetail.css";
 import w_tshirt_front from "./../../site assets/t-shirt oversize/white/mockup/W_F.png";
 import w_tshirt_back from "./../../site assets/t-shirt oversize/white/mockup/W_B.png";
+import b_tshirt_front from "./../../site assets/t-shirt oversize/black/mockup/B_F.png";
+import b_tshirt_back from "./../../site assets/t-shirt oversize/black/mockup/B_B.png";
 
 const ProductDetail = () => {
   const [mainImage, setMainImage] = useState(w_tshirt_front);
   const [activeImage, setActiveImage] = useState(0);
+  const [selectedColor, setSelectedColor] = useState("white");
+  const [activeSize, setActiveSize] = useState("");
 
   const handleThumbnailClick = (image, index) => {
     setMainImage(image);
     setActiveImage(index);
   };
 
-  const images = [w_tshirt_front, w_tshirt_back];
+  const handleColorChange = (color) => {
+    setSelectedColor(color);
+    if (color === "white") {
+      setMainImage(w_tshirt_front);
+    } else {
+      setMainImage(b_tshirt_front);
+    }
+  };
+
+  const handleSizeClick = (size) => {
+    setActiveSize(size);
+  };
+
+  const images = selectedColor === "white" ? [w_tshirt_front, w_tshirt_back] : [b_tshirt_front, b_tshirt_back];
 
   const Show = () => {
     const editorModal = document.getElementById('editorModal');
@@ -25,11 +41,7 @@ const ProductDetail = () => {
       <div className="product-container">
         <div className="product-detail">
           <div className="product-image">
-            <img
-              src={mainImage}
-              alt="T-shirt"
-              className="main-image"
-            />
+            <img src={mainImage} alt="T-shirt" className="main-image" />
             <div className="thumbnail-images">
               {images.map((image, index) => (
                 <img
@@ -45,29 +57,37 @@ const ProductDetail = () => {
           <div className="product-info">
             <h1>Unisex Oversize Köynək</h1>
             <p>
-              Bu unisex t-shirt, gündəlik istifadə üçün mükəmməl bir parça olaraq dizayn edilmişdir. 
-              Bu t-shirt, istənilən stil ilə birləşdirə biləcəyiniz sadə və şık bir dizayna malikdir.
-              Hər yerdə rahatlıqla geyinmək üçün mükəmməl bir seçimdir. 
-              Yüksək keyfiyyətli pambıq materialdan hazırlanmış, nəfəs alan və rahat bir fit təqdim edir.
+              Gün üçün nəzərdə tutulmuş bu şık oversize köynək, sənə rahatlığı və zərifliyi eyni anda təqdim edir. Sadə dizaynı ilə müxtəlif stillərlə uyumlu olaraq gündəlik geyimə mükəmməl şəkildə əlavə olunur. Keyfiyyətli pambıq materialından hazırlanmış, nəfəs alaraq sənə gün boyu rahatlıq gətirir.
             </p>
             <div className="color-variants">
               <p>Rəng variantları</p>
               <div className="colors">
-                <span className="color-circle" style={{ backgroundColor: "white" }}></span>
-                <span className="color-circle" style={{ backgroundColor: "black" }}></span>
+                <span
+                  className={`color-circle ${selectedColor === "white" ? "selected" : ""}`}
+                  style={{ backgroundColor: "white" }}
+                  onClick={() => handleColorChange("white")}
+                ></span>
+                <span
+                  className={`color-circle ${selectedColor === "black" ? "selected" : ""}`}
+                  style={{ backgroundColor: "black" }}
+                  onClick={() => handleColorChange("black")}
+                ></span>
               </div>
             </div>
             <div className="size-variants">
               <p>Ölçü</p>
               <div className="sizes">
-                <span className="size-box">S</span>
-                <span className="size-box">M</span>
-                <span className="size-box">L</span>
-                <span className="size-box">XL</span>
-                <span className="size-box">2XL</span>
+                {["S", "M", "L", "XL", "2XL"].map((size) => (
+                  <span
+                    key={size}
+                    className={`size-box ${activeSize === size ? "active-size" : ""}`}
+                    onClick={() => handleSizeClick(size)}
+                  >
+                    {size}
+                  </span>
+                ))}
               </div>
             </div>
-
             <div className="product-price">
               <span>30-34₼</span>
               <button onClick={() => Show()} className="start-design-button">Dizayna başla</button>

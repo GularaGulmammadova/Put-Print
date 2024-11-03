@@ -63,7 +63,14 @@
     border-color: #FF810C;
     border-radius: 6px; 
   }
+  .color-circle.selected {
+    border: 2px solid orange;
+  }
   
+  .size-box.active-size {
+    background-color: orange;
+    color: white;
+  }
   .product-info {
     flex: 1;
   }
@@ -140,7 +147,7 @@
     align-items: center;
     background-color: #FF9132; 
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #fff;
     width: 309px;
     height: 51px;
@@ -159,19 +166,19 @@
   }
 
   .product-price span{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
   }
 
   .start-design-button {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     background: none;
     border: none;
     cursor: pointer;
     border-radius: 15px;
     color: #fff;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   
 
