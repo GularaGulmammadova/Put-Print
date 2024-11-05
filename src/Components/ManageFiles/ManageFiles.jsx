@@ -41,6 +41,10 @@ const ManageFiles = ({setColor}) => {
         
         <button className={styles.orderBtn}>Sifariş et</button>
       </div>
+
+      <div className={styles.warning}>
+        <h3>{`! Don't go out of the borders`}</h3>
+      </div>
     </div>
   )
 }
