@@ -4,7 +4,7 @@ import ColorPicker from '../ColorPicker/ColorPicker'
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-const ManageFiles = ({setColor, product}) => {
+const ManageFiles = ({setColor, product, submitDesign, downloadDesign}) => {
 
   const [size, setSize] = useState('S');
   const [material, setMaterial] = useState('Nazik');
@@ -42,8 +42,8 @@ const ManageFiles = ({setColor, product}) => {
           {!product.minPrice && <h3 className={styles.title}>{product.price}</h3>}
           {product.minPrice && <h3 className={styles.title}>{material==='Nazik' ? product.minPrice : product.maxPrice}</h3> }
         </div> 
-        
-        <button className={styles.orderBtn}>Sifariş et</button>
+        <button onClick={() => {downloadDesign();}} className={styles.orderBtn}>Dizainı yüklə</button>
+        <button onClick={submitDesign} className={styles.orderBtn}>Sifariş et</button>
       </div>
 
       <div className={styles.warning}>
